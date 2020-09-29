@@ -1,0 +1,19 @@
+table, td, th {    
+    border: 1px solid black;
+	left: 50%;
+	top: 50%;
+	margin: -278px 0 0 -400px;
+}
+table {
+    border-collapse: collapse;
+    width: 800px;
+	position: absolute;
+	border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+}
+th, td {
+    padding: 5px;
+	
+}

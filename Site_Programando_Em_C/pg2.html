@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<head>
+	<title>Hello Tutorial</title>
+</head>
+<body bgcolor="#E8E8E8">
+	<center><table border="0" cellspacing="0" cellpadding="0">
+		<tr BGCOLOR="white">
+			<th width="450" height="50"><font face="tahoma" size="4">Tutorial de Programação em C</th>
+				
+				<td width="150"><font face="arial" color="#2D245B"><center><b><a href="index.html">| Home |</a></b></center></font></td>
+				<td width="150"><font face="arial" color="#2D245B"><center><b><a href="pg2.html">| Os 5 Passos |</a></b></center></font></td>
+				<td width="150"><font face="arial" color="#2D245B"><center><b><a href="pg1.html">| Exibir Código |</a></b></center></font></td>				
+		</tr>
+		<tr BGCOLOR="white">
+				<td colspan="100%"><img src="img1.jpg" width="900" height="20" alt="logo" >
+			</td>
+		</tr><center>
+<th colspan="5" width="800" height="100%" bgcolor="white" align="middle">
+Passo 1<p>
+<textarea name="nome" cols="100" rows="35" disabled>
+Se Preparando
+
+1
+Baixe e instale um compilador. Um código em C precisa ser compilado por um programa que traduz os códigos em sinais que a máquina possa entender. Os compiladores geralmente são gratuitos, e existem diferentes versões deles para cada sistema operacional.
+Para o Windows, teste o Microsoft Visual Studio Express ou o MinGW.
+Para Mac, o XCode é um dos melhores compiladores de C.
+Para o Linux, o GNU é uma das opções mais utilizadas.
+
+2
+Entenda o básico. A C é uma das linguagens de programação mais antigas, mas pode ser muito poderosa. Ela foi projetada para sistemas operacionais baseados em Unix, mas foi portada e expandida para quase todos os sistemas. A versão moderna do C é o C++.
+O C é essencialmente composto de funções, que podem usar variáveis, condicionais e laços para salvar e manipular dados.
+
+3
+Veja alguns códigos simples. Veja um programa bem simples abaixo para ter uma boa ideia sobre como vários aspectos da linguagem funcionam juntos, e sobre como os programas funcionam.
+
+
+#include <stdio.h>
+ 
+int main() 
+{
+    printf("Hello, World!\n");
+    getchar();
+    return 0;
+}
+
+
+O comando #include vem antes do início do programa, ele carrega as bibliotecas que contêm as funções que você vai precisar. Nesse exemplo, a stdio.h nos permite usar as funções printf() e getchar().
+O comando int main() diz ao compilador que o programa tem uma função chamada "main" e que ela vai retornar um inteiro quando termina. Todos os programas em C precisam de uma função "main".
+O {} indica que tudo dentro deles é parte da função. Nesse aso, eles denotam que dentro deles está a função "main"
+A função printf() mostra o conteúdo dos parênteses na tela do usuário. As aspas garantem que a string será mostrada exatamente como está. O \n diz ao compilador para pular uma linha.
+O ; denota o fim de uma linha. A maioria das linhas em C termina com um ponto e vírgula.
+O comando getchar() diz ao compilador para esperar que o usuário pressione um botão antes de continuar. Isso é muito útil pois muitos compiladores vão executar o programa e então fechar a janela imediatamente. Esse comando evita que a janela feche até que um botão seja pressionado.
+O comando return 0 indica o fim de uma função. Perceba que a função "main" é do tipo int. Isso significa que ela vai precisar de um inteiro para retornar quando o programa acabar. Um "0" indica que o programa terminou sem erros; qualquer outro número representa problemas.
+
+4
+Tente compilar o programa. Coloque o código em um editor e salve-o como um arquivo "*.c". Compile-o no seu computador, geralmente clicando no botão "Build" ou "Run".
+
+5
+Sempre deixe comentários no código. Os comentários são uma parte do código que não é compilada, mas permite que você explique o que está ocorrendo. Isso é útil para lembrar a você e a outros desenvolvedores da função daquela parte do código.
+Para comentar em C, digite /* no início do comentário e */ no final.
+Comente em todas, exceto as partes básicas do código.
+Os comentários pode ser usados para remover rapidamente uma parte do código sem deletá-la. Simplesmente coloque o código entre os símbolos de /* e */ e compile. Caso queira o código de volta, basta remover os símbolos.
+</textarea><p>
+
+Passo 2<p>
+<textarea name="nome" cols="100" rows="35" disabled>
+Usando Variáveis
+
+1
+Entenda a função das variáveis. Elas permitem que você guarde dados, seja de cálculos do programa ou dados digitados pelo usuário. Elas precisam ser definidas antes de serem usadas, e existem vários tipos delas.
+Alguns dos mais comuns são int, char, e float. Cada uma guarda um tipo de dado diferente.
+
+2
+Aprenda a declarar variáveis. As variáveis precisam ser estabelecidas, ou "declaradas", antes de serem usadas pelo programa. Você declara elas digitando o tipo de dado seguido pelo nome da variável. Seguem alguns exemplos possíveis de declaração:
+float x;
+char nome;
+int a, b, c, d;
+Perceba que é possível declarar várias variáveis na mesma linha, desde que elas sejam do mesmo tipo. Simplesmente separe-as com vírgulas.
+Como várias outras linhas do C, cada declaração precisa terminar com um ponto e vírgula.
+
+3
+Saiba onde declarar variáveis. Elas precisam ser declaradas no começo de cada bloco de código. (um bloco de código é fechado por colchetes) Se você tentar declarar uma variável mais tarde dentro do bloco, o programa não vai funcionar corretamente
+
+4
+Use as variáveis para guardar entradas de dados do usuário. Agora que você já sabe o básico sobre como elas funcionam, você pode criar um simples programa que vai gravar a entrada do usuário em uma variável. Será necessário usar uma outra função da linguagem, chamada scanf, que lê a o que foi digitado pelo usuário.
+
+#include <stdio.h>
+ 
+int main()
+{
+  int x;
+ 
+  printf( "Digite um número: " );
+  scanf( "%d", &x );
+  printf( "Você digitou %d", x );
+  getchar();
+  return 0;
+}
+
+O "%d" string diz ao scanf para procurar por inteiros na entrada do usuário.
+O & antes da variável x diz ao scanf onde encontrar a variável para que seja possível mudá-la, e guarda o inteiro nela.
+Por último, o comando printf exibe o inteiro lido na tela do usuário.
+
+5
+Manipule as variáveis. Você pode usar expressões matemáticas para manipular dados gravados em variáveis. A principal diferença entre operadores matemáticos que deve ser lembrada é que o = atribuí um valor à variável enquanto o == compara os valores em ambos os lados para saber se eles são iguais.
+x = 3 * 4; /* atribuí 3 * 4 (12) ao "x" */
+x = x + 3; /* soma 3 ao valor original de "x" e atribuí o novo valor à variável */
+x == 15; /* verifica se o "x" é igual a 15 */
+x < 10; /* verifica se o valor de "x" é menor que 10 */</textarea><p>
+
+Passo 3<p>
+<textarea name="nome" cols="100" rows="35" disabled>
+Usando Condicionais
+
+1
+Aprenda o básico sobre condicionais. Os condicionais são a base da maioria dos programas. Eles são expressões que retornam um valor TRUE (verdadeiro) ou FALSE (falso), e então uma medida é tomada baseando-se no resultado. O condicional mais básico é o if.
+TRUE e o FALSE funcionam no C diferente do que você deve estar acostumado. Expressões verdadeiras (TRUE) sempre acabam retornando um valor diferente de 0. Ao fazer comparações, se o resultado for verdadeiro, um "1" é retornado. Se ela for falsa, um "0" é retornado. Entender isso vai te ajudar a visualizar como são processados os condicionais IF (se).
+
+2
+Aprenda os operadores condicionais básicos. Os condicionais geralmente são, em geral, operadores matemáticos que comparam valores. A lista a seguir contém os operadores mais usados.
+>   /* maior que */
+<   /* menor que */
+>=  /* maior ou igual */
+<=  /* menor ou igual */
+==  /* igual to */
+!=  /* diferente */
+
+
+10 > 5 TRUE
+6 < 15 TRUE
+8 >= 8 TRUE
+4 <= 8 TRUE
+3 == 3 TRUE
+4 != 5 TRUE
+
+3
+Escreva uma expressão básica envolvendo o IF. Você pode usar o IF para determinar o que o programa deve fazer após a expressão ser avaliada. É possível combinar condicionais para criar várias opções, mas comece com uma simples para se acostumar.
+
+#include <stdio.h>
+ 
+int main()
+{
+  if ( 3 < 5 )
+    printf( "3 é menor que 5");
+    getchar();
+}
+
+4
+Use o ELSE/ELSE IF (senão/senão se) para dar continuidade às suas condições. Você pode usar eles após condicionais IF para tratar os diferentes resultados. O ELSE será executado caso o IF seja falso. O ELSE IF permite que você inclua múltiplos IFs em um bloco de código para tratar diversos casos. Veja um exemplo no programa abaixo para ver como eles interagem.
+
+#include <stdio.h>
+ 
+int main()
+{
+  int idade;
+ 
+  printf( "Por favor digite a sua idade atual: " );
+  scanf( "%d", $age );
+  if ( age <= 12 ) {
+    printf( "Você é só uma criança!\n" );
+  }
+  else if ( age < 20 ) {
+    printf( "É ótimo ser adolescente!\n" );
+  }
+  else if ( age < 40 ) {
+    printf( "Você ainda é jovem de coração!\n" );
+  }
+  else {
+    printf( "Com a idade vem a sabedoria.\n" );
+  }
+  return 0;
+}
+
+Esse programa recebe o valor digitado pelo usuário e verifica-o através dos operadores IF. Caso o número satisfaça a primeira condição, então o primeiro printf é retornado. Senão, o programa vai percorrer todos os ELSE IF até achar um que seja satisfeito. Caso nenhum seja satisfeito, o bloco de código do ELSE, que está no final, será executado.
+</textarea><p>
+
+Passo 4<p>
+<textarea name="nome" cols="100" rows="35" disabled>
+Aprendendo a Usar os Laços
+
+1
+Entenda como funcionam os laços. Os laços são a parte mais importante da programação, pois eles permitem que você repita blocos de código até que condições específicas sejam satisfeitas. Isso facilita a tarefa de implementar ações repetidas e evita que você precise escrever uma expressão condicional sempre que você desejar que algo aconteça.
+Existem três diferentes tipos de laços: O FOR (para) o While (enquanto) e o DO ... WHILE (faça ... enquanto).
+
+2
+Utilizando o laço for. Esse é o tipo de laço mais comum. Ele continua executando um bloco de código até que as condições especificadas no laço sejam satisfeitas. Eles requerem três condições: a inicialização da variável, a condição a ser satisfeita e a forma como a variável é atualizada. Caso você não precise das três condições, deixe um espaço em branco com um ponto e vírgula, senão o laço vai rodar para sempre. 
+ 
+int main()
+{
+  int y;
+ 
+  for ( y = 0; y < 15; y++;){
+    printf( "%d\n", y );
+  }
+  getchar();
+}
+
+No programa acima, o y é definido como 0 e o laço continua enquanto a variável y for menor que 15. Cada vez que a variável y é mostrada, é adicionado 1 ao valor de y e o laço é repetido. Quando ela chegar a 15, o laço vai parar.
+
+3
+Usando o laço WHILE. Esse tipo de laço é mais simples que o FOR. Eles têm apenas uma condição, e o laço é repetido enquanto essa condição for verdadeira. Não é necessário inicializar ou atualizar a variável, mas é possível fazer isso dentro do laço.
+
+#include <stdio.h>
+ 
+int main()
+{
+  int y;
+ 
+  while ( y <= 15 ){
+    printf( "%d\n", y );
+    y++;
+  }
+  getchar();
+}
+
+O comando y++ adiciona 1 à variável y sempre que o laço for executado. Quando o y chegar a 16 (lembre-se, o laço continua enquanto a y for "menor ou igual" a 15) o laço para.
+
+4
+Usando o laço DO...WHILE. Esse laço é muito útil quando você quer ter certeza de que o bloco de código deve ser executado ao menos uma vez. Nos laços FOR e WHILE a condição é verificada no começo do laço, o que significa que ela pode falhar imediatamente. Os laços Do...WHILE verificam as condições no final do laço, garantindo que o bloco de código é executado ao menos uma vez.
+
+#include <stdio.h>
+ 
+int main()
+{
+  int y;
+ 
+  y = 5;
+  do {
+    printf("Esse laço está rodando!\n");
+  } while ( y != 5 );
+  getchar();
+}
+
+Esse laço vai exibir a mensagem mesmo que a condição seja falsa. O valor 5 é atribuído à variável y e o laço WHILE esta configurado para executar quando ela não for igual a 5, então o laço via terminar. A mensagem já tinha sido mostrada na tela porque a condição não é verificada antes do final.
+O laço WHILE em um DO...WHILE deve ser seguido por um ponto e vírgula. Essa é o único caso onde um laço termina com um ponto e vírgula.</textarea><p>
+
+Passo 5<p>
+<textarea name="nome" cols="100" rows="35" disabled>	
+Usando Funções
+
+1
+Entenda o básico sobre funções. Elas são blocos de código que podem ser chamadas por outras partes do programa. Elas tornam fácil a tarefa de repetir esse bloco, e ajudam o programa a ficar mais simples de ler e de ser modificado. As funções incluem todas as técnicas já mostradas aqui, inclusive outras funções.
+A linha main() no começo de todos os exemplos acima são funções, assim como o getchar()
+Funções são blocos de códigos essenciais, eficientes e fáceis de ler. Faça um bom uso delas para deixar o seu programa bem fluído.
+
+2
+Comece com um esboço. As funções são criadas de forma mais eficiente quando você faz um esboço do que deseja antes de programar. A sintaxe básica das funções é "tipo_de_retorno nome ( parâmetro1, parâmetro2, etc.);". Essa função soma dois números, por exemplo:
+int add ( int x, int y );
+Isso vai criar uma função que recebe dois inteiros, (x e y), soma os seus valores e retorna o resultado.
+
+3
+Adicione a função ao programa. Você pode usar o esboço para criar um programa que recebe dois inteiros que o usuário digita, soma seus valores e retorna o resultado. O programa vai definir como essa função, que poderá se chamar adicionar, funcionará e vai utilizá-la para manipular os números digitados.
+
+#include <stdio.h>
+ 
+int add ( int x, int y );
+ 
+int main()
+{
+  int x;
+  int y;
+ 
+  printf( "Entre com dois números para serem somados: " );
+  scanf( "%d", &x );
+  scanf( "%d", &y );
+  printf( "A soma dos dois números é %d\n" add( x, y ) );
+  getchar();
+}
+ 
+int add ( int x , int y )
+{
+  return x + y;
+}
+
+Perceba que o esboço da função ainda está no topo do programa. Isso diz ao compilador quando esperar que a função seja chamada e o que ela retornará. Isso é necessário apenas quando você deseja definir a função mais tarde no programa. É possível definir add() antes da função main() e o resultado seria o mesmo.
+A funcionalidade das funções é definida na base do programa. A função main() coleta os inteiros do usuário e envia eles para a função add() para que eles sejam processados. A função add() então retorna o resultado para a main()
+Agora que a add() foi definida, você pode usá-la em qualquer parte do programa.</textarea><p>
+
+Dicas:<p>
+<textarea name="nome" cols="100" rows="35" disabled>
+
+1
+Procure um livro de programação em C. Esse artigo ensina o básico, mas ainda é muito pouco considerando o poder dessa linguagem. Um bom livro vai ajudar você a resolver problemas e poupar você de várias dores de cabeça durante a programação.
+
+2
+Participe de comunidades. Existem várias comunidades, tanto online quanto na vida real, dedicadas à programação e todas as suas linguagens. Encontre outros programadores de C com os mesmos objetivos para trocar ideias e você aprenderá bastante.
+Participe de maratonas de programação, se possível. Nesses eventos, que podem ser individuais ou em times, as pessoas têm um limite de tempo para fazer programas e encontrar soluções, o que desenvolve bastante a criatividade. Você poderá encontrar vários bons programadores dessa forma. Essas maratonas acontecem regularmente no mundo inteiro.
+
+3
+Assista algumas aulas. Você não precisa voltar a estudar para tentar entrar numa faculdade de Ciência da Computação, mas algumas aulas sobre o assunto podem acelerar bastante o aprendizado. Nada é mais útil que a ajuda de pessoas que têm muita fluência com a linguagem. Você pode geralmente encontrar essas aulas em centros comunitários ou em colégios. Algumas universidades podem permitir que você assista aulas de computação sem precisar se matricular.
+
+4
+Considere aprender C++. Depois de aprender C, é uma boa ideia dar uma olhada no C++, que é uma versão mais moderna do C, que permite uma maior flexibilidade. O C++ envolve orientação ao objeto, então aprendê-lo vai permitir que você crie programas poderosos para quase todos os sistemas operacionais.
+Dicas
+Sempre faça comentários nos programas. Isso não apenas ajuda as pessoas que possam estar dando uma olhada no seu código mas também faz com que você se lembre o que você estava programando e por quê. Você pode saber o que está fazendo no momento em que você estava programando, mas alguns meses depois você não vai se lembrar de muita coisa.
+Ao encontrar um erro de sintaxe ao compilar e não conseguir resolver, procure no Google (ou outra ferramenta de pesquisa) informações sobre o erro. Existe uma boa chance de que alguém já tenha passado pelo mesmo problema e postado uma solução.
+O seu código fonte precisa ter uma extensão *.c, para que o compilador possa enxergá-lo como um arquivo de código fonte de C.</textarea><p>
+
+</th>
+
+
+	</table></center>
+	
+	<center><font size="2" color="grey">- Copyright © 2018 | A.G -</font></center>
+
+</body>
+</html>

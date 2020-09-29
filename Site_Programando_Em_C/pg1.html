@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<head>
+	<title>Hello Tutorial</title>
+</head>
+<body bgcolor="#E8E8E8">
+	<center><table border="0" cellspacing="0" cellpadding="0">
+		<tr BGCOLOR="white">
+			<th width="450" height="50"><font face="tahoma" size="4">Tutorial de Programação em C</th>
+				
+				<td width="150"><font face="arial" color="#2D245B"><center><b><a href="index.html">| Home |</a></b></center></font></td>
+				<td width="150"><font face="arial" color="#2D245B"><center><b><a href="pg2.html">| Os 5 Passos |</a></b></center></font></td>
+				<td width="150"><font face="arial" color="#2D245B"><center><b><a href="pg1.html">| Exibir Código |</a></b></center></font></td>				
+		</tr>
+		<tr BGCOLOR="white">
+				<td colspan="100%"><img src="img1.jpg" width="900" height="20" alt="logo" >
+			</td>
+		</tr>
+		<tr bgcolor="white">
+			<td colspan="5" align="middle">
+Esse Código executa um programa de Acrescimo ou Desconto:<p>
+				<textarea name="nome" cols="100" rows="35" disabled>
+					#include <stdio.h>
+					#include <stdlib.h>
+
+					int main()
+					{
+    				float Preco;
+    				char Operacao;
+
+    				printf("Digite o preco da mercadoria: R$ ");
+    				scanf("%f", &Preco);
+    				if(Preco <= 0)
+        			printf("Valor incorreto. \n");
+    				else
+    				{
+        			printf("Digite a Operacao: A:Acrescimo ou D:Desconto : ");
+        			scanf("\n%c", &Operacao);
+    				}
+
+    				switch(Operacao)
+    				{
+        			case 'A' : case 'a':
+                	printf("Valor com Acrescimo: %.1f\n", (Preco * 1.03));
+                	break;
+
+        			case 'D': case 'd':
+                	printf("Valor do Desconto: %.1f\n", (Preco * 0.97));
+                	break;
+    				}
+    				return 0;
+					}
+
+				</textarea>
+
+				</td>
+				</tr>	
+
+
+	</table></center>
+	
+	<center><font size="2" color="grey">- Copyright © 2018 | A.G -</font></center>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Apple Store</title>
+	
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<embed src="musica/tema.mp3" autostart="true" loop="true" height="0" width="0"></embed>
+<body bgcolor="black">
+
+
+		<form name="atividade5" method="post">
+		<table border="1" cellspacing="1" cellpadding="0" bgcolor="white">
+		<tr>
+		<th colspan='4'><b><h2><font face="Verdana" color="#000080">My Apple Store</h2></font></b></th>
+		<tr valign="top">
+				<td><img src="f1.jpg" width="100%" height="110%" align="middle" alt="imac" ></td>
+				<td><img src="f2.jpg" width="100%" height="110%" align="middle" alt="iphone"></a></td>
+				<td><img src="f3.jpg" width="100%" height="110%" align="middle" alt="ipad2"></a></td>
+				<td><img src="f4.jpg" width="100%" height="110%" align="middle" alt="ipod"></td>
+		</tr>
+		<tr>
+				<td align="center"><p>
+					Tipo de Usuário:
+				     <select id="select1">
+				     	<option value="branco"> &nbsp;</option>
+					     <option value="master"> Master</option>
+					     <option value="senior"> Sênior</option>
+					     <option value="junior"> Júnior</option>
+				     </select><p>
+				     <input type="CHECKBOX" name="comp" id="comprar1" > Comprar<p>
+				     <input type="button" id="b1" value="Simular Pagamento" onclick="SimularCompra()"><p>
+				</td>
+				<td align="center"><p>
+					Tipo de Usuário:
+				     <select id="select2">
+				     	<option value="branco"> &nbsp;</option>
+					     <option value="master"> Master</option>
+					     <option value="senior"> Sênior</option>
+					     <option value="junior"> Júnior</option>
+				     </select><p>
+				     <input type="CHECKBOX" name="comp" id="comprar2" value="comp"> Comprar<p>
+				     <input type="button" name="b2" value="Simular Pagamento" onclick="SimularCompra()"><p>
+				<td align="center"><p>
+					Tipo de Usuário:
+					<select id="select3">
+						<option value="branco"> &nbsp;</option>
+						<option value="master"> Master</option>
+						<option value="senior"> Sênior</option>
+						<option value="junior"> Júnior</option>
+					</select><p>
+					<input type="CHECKBOX" name="comp" id="comprar3" value="comp"> Comprar<p>
+					<input type="button" name="b3" value="Simular Pagamento" onclick="SimularCompra()"><p>
+				</td>
+                <td align="center"><p>
+                    Tipo de Usuário:
+					<select id="select4">
+						<option value="branco"> &nbsp;</option>
+						<option value="master"> Master</option>
+						<option value="senior"> Sênior</option>
+						<option value="junior"> Júnior</option>
+					</select><p>
+					<input type="CHECKBOX" name="comp" id="comprar4" value="comp"> Comprar<p>
+					<input type="button" name="b4" value="Simular Pagamento" onclick="SimularCompra()"><p>
+					</td>
+				</tr>
+
+				<tr>
+				<td colspan="3"><p>
+				N° do Cartão de Crédito: <input type="TEXT" size="15" name="cc" id="cartao" ><p>
+
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+				N° de Parcelas: <select id="parcelas">
+					 	<option value="branco"> &nbsp;</option>
+						<option value="1"> &nbsp;1</option>
+						<option value="2"> &nbsp;2</option>
+						<option value="3"> &nbsp;3</option>
+								</select><p>
+
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+				Nome:<input type="TEXT" size="15" name="nome" id="nome"><p>
+				</td>
+				<td align="center"><input type="button" name="b5" value="Fechar Compra" onclick="comprar()">&nbsp;
+				</td>
+				</tr>
+</table>
+</body>
+<footer align="center" style="margin-top: 780px; margin-left: -190px"><font size="2" color="grey" style="position: absolute" >- Copyright © 2018 | Alef Gaigher. -</font></footer>
+</html>

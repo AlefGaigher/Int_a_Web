@@ -1,0 +1,119 @@
+.menuescolha{
+	border: 1px solid #000;
+	margin-top: 0;
+	margin-left: 3%;
+	display: none;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    z-index: -10;
+    width: 700px;
+    height: 200px;
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+	
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	-moz-animation: fadeIn 0.3s ease-in-out;
+	-o-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+
+}
+	@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; } 
+	}
+	@-moz-keyframes fadeIn {
+	0% { opacity: 0;}
+	100% { opacity: 1; }
+	}
+	@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+	}
+	@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+	}
+	
+
+.avatarpersonagem{
+	background-image: url('avatar.jpg');
+	background-size: 100% 100%;
+	margin-top: 2%;
+	margin-left:20px;
+    width: 170px;
+    height: 170px;
+	background-color: white;
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;	
+
+}
+.camposkill{
+	display: flex;
+    flex-wrap: wrap;
+	align-content: flex-start;
+	margin-top: 2%;
+	margin-left: 15%;
+	width: 300px;
+	height:52px;
+
+	
+}
+.skill{
+	cursor:pointer;
+	display: flex;
+	border: 2px solid #DAA520;
+	margin-left:4%;
+	width: 50px;
+    height: 50px;	
+	background-color: white;
+	border-top-left-radius: 100%;
+    border-top-right-radius: 100%; 
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+.descricao{
+	border-top: 2px solid red;
+	margin-top: -110px;
+	margin-left: 230px;
+	width: 400px;
+    height: 100px;
+	background-color: rgba(255,255,255,0.6);
+	text-align: center;
+}
+.imagem{
+	border-top-left-radius: 100%;
+    border-top-right-radius: 100%; 
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+
+}
+#text1{
+	display: none;
+}
+#text2{
+	display: none;
+}
+#text3{
+	display: none;
+}
+#text4{
+	display: none;
+}
+#text5{
+	display: none;
+}
+#text6{
+	display: none;
+}
+#text7{
+	display: none;
+}
+#text8{
+	display: none;
+}
