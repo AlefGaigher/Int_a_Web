@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+		function teste() {
+		if (document.form1.op3.checked==true){
+			alert ("Parabéns, Você é Estudioso!");
+		}
+			else{
+				alert ("Você Precisa estudar mais");
+		}
+		}
+	</script>
+	<meta charset="utf-8">
+	<title>teste</title>
+</head>
+<body >
+<form name="form1" action="post" >
+Selecione a quatidade de dias de estudo na semana: <p>
+	<input type="checkbox" name="op1" value="1">1
+	<input type="checkbox" name="op2" value="3">3
+	<input type="checkbox" name="op3" value="7">7
+	<input type="button" name="btn" value="testar" onClick="teste()" ></form>
+</body>
+</html>

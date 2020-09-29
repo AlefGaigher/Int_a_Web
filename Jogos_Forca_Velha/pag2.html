@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jogo da Forca</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1"> 
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/forca.css">
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/ocultar.js"></script>
+
+	<!-- Hotjar Tracking Code for http://suporte.sisdanca.com.br/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1315825,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+<body bgcolor="#e6e6e6">
+	<div class="corpoprincipal" align="center">
+		<div class="banner">
+		<img src="img/banner1.png"></div><div>
+		<ul>
+  			<li><a onclick="alternar('ia')">Jogo</a></li>
+  			<li ><a onclick="alternar('tuto')">Tutorial</a></li>
+  			<li style="float:right"><a href="index.html">Voltar ao Menu de Jogos</a></li>
+		</ul>
+		</div>
+<div id="ia" class="teladejogo">
+</br> </br> 
+	<div class="digitealetra"> Digite Sua Letra  </div><input type="text" id="letraJ" class="letraJ" maxlength="1" style="width: 50px;" onkeypress="return executarFuncao(event)">
+
+	 <p>
+
+		<input type="text" id="letra0" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra1" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra2" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra3" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra4" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra5" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra6" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra7" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra8" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra9" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra10" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra11" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra12" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra13" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra14" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra15" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra16" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra17" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra18" class="letra" maxlength="1" style="width: 50px;" disabled>
+		<input type="text" id="letra19" class="letra" maxlength="1" style="width: 50px;" disabled>
+
+		<p> <div class="alertas1" id="alert1">Você Errou! Tente Novamente.</div>
+			<div class="alertas2" id="alert2">Você Acertou! Jogue Novamente.</div></br>
+			<div id="tentativas"> Tentativas Restantes: 7 </div>
+			<div id="dvletrasdigitadas">Letras Erradas: </div><p>
+	
+		<button onclick="inicia()"> Novo Jogo </button>
+		<button onclick="dica()">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Dica
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</button> <p>
+			<input type="text" class="botaodica" size="50" id="fname" name="fname" value="" disabled></div>
+			
+			<div id="tuto" class="tutorial">
+
+	Como jogar o Jogo da Forca<p>
+Jogue qualquer uma das letras. Se a letra existir em alguma palavra, a letra será exibida. Caso contrário, seu numero de tentativas ira descer cada vez mais.
+Você tem que acertar as palavras para vencer e para isso você pode errar até 7 vezes.
+	</div>
+		<div><footer align="center" style="margin-top: 30px">
+	<p style="color: #777">Layout by Alef Garcia Gaigher<br>
+	Copyright &copy 2018 ||<a href="https://github.com/AlefGaigher"> GitHub Page</a></p></div>
+	</div>
+</body>
+</footer>
+</html>

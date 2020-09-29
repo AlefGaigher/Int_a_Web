@@ -1,0 +1,56 @@
+table, td, th {    
+    border: 0px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+	left: 50%;
+	top: 50%;
+	margin: -200px 0 0 -350px;
+}
+table{
+    border-collapse: collapse;
+    width: 700px;
+    height: 400px;
+	position: absolute;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+th, td {
+    padding: 5px;
+	
+}
+
+button{
+    background-color: gray;
+    color: white;
+    padding: 3px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0px;
+}
+
+
+button:hover, button:active {
+    background-color: #C0C0C0;
+}
+input[name="numero"]{
+    width: 45px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+span#fontes{
+    color: white;
+    font-weight: bold;
+    font-family: Arial Narrow;
+    font-size: 18px;
+
+}
+span#fontes2{
+    color: black;
+    font-weight: bold;
+    font-family: Arial Narrow;
+    font-size: 18px;
+
+}
